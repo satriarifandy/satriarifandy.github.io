@@ -923,7 +923,7 @@ section {
 
 .team .member .member-info-content {
   position: absolute;
-  left: 50px;
+  left: 0;
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
@@ -977,14 +977,95 @@ section {
 }
 
 .team .member:hover .member-info-content {
+  justify-content: center;
   bottom: 30px;
   transition: bottom 0.4s;
 }
 
-.team .member:hover .social {
-  left: 0;
-  transition: left ease-in-out 0.3s;
+.portfolio {
+  background: #fff;
+  padding: 60px 0;
 }
+
+.portfolio .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.portfolio .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: bottom 0.4s;
+}
+
+.portfolio .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.portfolio .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.portfolio .member .social {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: left ease-in-out 0.3s;
+  background: rgba(78, 64, 57, 0.6);
+  text-align: center;
+}
+
+.portfolio .member .social a {
+  transition: color 0.3s;
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.portfolio .member .social a:hover {
+  color: #eb5d1e;
+}
+
+.portfolio .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.portfolio .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.portfolio .member:hover .member-info-content {
+  justify-content: center;
+  bottom: 30px;
+  transition: bottom 0.4s;
+}
+
 
 /*--------------------------------------------------------------
 # Clients
